@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	joke "rbo13/dad-joke"
+
+	joke "github.com/rbo13/dad-joke"
 )
 
 func main() {
