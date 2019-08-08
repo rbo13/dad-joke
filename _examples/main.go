@@ -8,8 +8,8 @@ import (
 
 func main() {
 
-	// res := joke.GetJSON()
-	res := joke.GetHTML()
+	res := joke.GetJSON()
+	// res := joke.GetHTML()
 
 	fmt.Print(res)
 }

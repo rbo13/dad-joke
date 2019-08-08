@@ -66,7 +66,7 @@ func makeRequest(applicationHeader string) (*http.Response, error) {
 	}
 
 	req.Header.Set("Accept", applicationHeader)
-	req.Header.Set("User-Agent", "https://github.com/rbo13")
+	req.Header.Set("User-Agent", "https://github.com/rbo13/dad-joke")
 
 	return client.Do(req)
 }
