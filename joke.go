@@ -16,7 +16,8 @@ const (
 )
 
 // GetJSON returns a DadJoke.
-// Possible Accept Header Values: application/json, text/html, and text/plain. Defaults to json.
+// Possible Accept Header Values: application/json, text/html, and text/plain.
+// Defaults to json.
 func GetJSON() DadJoke {
 	var dj = DadJoke{}
 
@@ -38,7 +39,6 @@ func GetHTML() string {
 	}
 	defer res.Body.Close()
 
-	// log.Println(res.Body)
 	body, err := ioutil.ReadAll(res.Body)
 	if err != nil {
 		return ""
